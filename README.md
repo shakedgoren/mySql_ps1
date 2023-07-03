@@ -14,7 +14,8 @@ Install-Module -Name SimplySql
 3. Import the required PowerShell modules in the script by adding the following lines at the beginning:
 Import-Module SimplySql
 Import-Module Microsoft.PowerShell.Utility
-4. Run the script by executing the PowerShell script file (script.ps1) from the PowerShell console.
+4. Connect to your database with username & password
+5. Run the script by executing the PowerShell script file (show.ps1) from the PowerShell console.
 
 # Functionality
 ### 1. Creating Tables
