@@ -1,0 +1,15 @@
+-- Active: 1687778507418@@127.0.0.1@3306@mydatabase
+
+CREATE TABLE DEPT (
+  id INT PRIMARY KEY,
+  name VARCHAR(255)
+);
+
+CREATE TABLE EMPLOYEES (
+  id INT PRIMARY KEY,
+  Fullname VARCHAR(50),
+  Salary DECIMAL(10, 2),
+  Hiredate DATETIME UNIQUE,
+  DeptId INT,
+  FOREIGN KEY (DeptId) REFERENCES DEPT(id)
+);
